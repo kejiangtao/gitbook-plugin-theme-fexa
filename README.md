@@ -9,7 +9,7 @@ Add the theme to your book's configuration `book.json` or `book.js`:
 ```js
 {
     "plugins": [
-        "theme-fexa"
+        "theme-fexaedit"
     ],
     "variables": {
         "themeFexa":{
@@ -23,7 +23,7 @@ Add the theme to your book's configuration `book.json` or `book.js`:
         },
     },
     "pluginsConfig": {
-        "theme-fexa":{
+        "theme-fexaedit":{
             "search-placeholder":"输入关键字搜索", //搜索框提示信息
             "logo":"./logo.png", //logo地址
             "favicon": "./favicon.ico" //ico地址
@@ -48,7 +48,7 @@ plugins: [
     "copy-code-button",
     "cuav-chapters",
     "heading-anchors",
-    "theme-fexa"
+    "theme-fexaedit"
     //...
 ]
 ```
