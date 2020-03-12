@@ -1,7 +1,5 @@
 var fs = require('fs');
 var path = require('path');
-var configOption = this.config.get('pluginsConfig')['theme-fexa'];
-var styleCss = (configOption && configOption.style) ? configOption.style:'fexa.css';
 module.exports = {
     website: {
         assets: './_assets/',
@@ -9,12 +7,12 @@ module.exports = {
             'fexa.js'
         ],
         css: [
-            styleCss
+            'blue.css'
         ]
     },
     hooks: {
         finish: function () {
-            var configOption = this.config.get('pluginsConfig')['theme-fexa'];
+            var configOption = this.config.get('pluginsConfig')['theme-fexaedit'];
             var output = configOption ? (configOption.output || '_book') : '_book';
             var pathFile;
 
@@ -42,7 +40,7 @@ module.exports = {
             pathFile = configOption && configOption.logo;
             if(pathFile){
                 var logoPath = path.join(process.cwd(), pathFile);
-                var pluginLogoPath = path.join(process.cwd(), output, 'gitbook','gitbook-plugin-theme-fexa',"logo.png");
+                var pluginLogoPath = path.join(process.cwd(), output, 'gitbook','gitbook-plugin-theme-fexaedit',"logo.png");
                 if (fs.existsSync(logoPath)) {
                     fs.writeFileSync(pluginLogoPath, fs.readFileSync(logoPath));
                 }

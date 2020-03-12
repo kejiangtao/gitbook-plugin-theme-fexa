@@ -1,5 +1,5 @@
 {
-  "name": "gitbook-plugin-theme-fexa1",
+  "name": "gitbook-plugin-theme-fexaedit",
   "author": {
     "name": "kejiangtao"
   },
@@ -15,7 +15,7 @@
   "keywords": [
     "gitbook",
     "theme",
-    "fexa"
+    "fexaedit"
   ],
   "main": "index.js",
   "repository": {
@@ -23,5 +23,5 @@
     "url": "git+https://github.com/kejiangtao/gitbook-plugin-theme-fexa.git"
   },
   "scripts": {},
-  "version": "1.0.1"
+  "version": "1.0.4"
 }
