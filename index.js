@@ -1,6 +1,7 @@
 var fs = require('fs');
 var path = require('path');
-
+var configOption = this.config.get('pluginsConfig')['theme-fexa'];
+var styleCss = (configOption && configOption.style) ? configOption.style:'fexa.css';
 module.exports = {
     website: {
         assets: './_assets/',
@@ -8,7 +9,7 @@ module.exports = {
             'fexa.js'
         ],
         css: [
-            'fexa.css'
+            styleCss
         ]
     },
     hooks: {
